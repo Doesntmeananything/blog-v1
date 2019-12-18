@@ -6,7 +6,7 @@ import SEO from "../components/seo";
 import Button from "../components/button";
 
 const IndexPage = ({ location }) => {
-  const siteTitle = "Gatsby Starter Personal Website";
+  const siteTitle = "Welcome to my Thoughts, Ideas & Work.";
 
   return (
     <Layout location={location} title={siteTitle}>
