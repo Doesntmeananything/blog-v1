@@ -12,7 +12,7 @@ import styled from "styled-components";
 
 import { rhythm } from "../utils/typography";
 
-function Bio() {
+const Bio = () => {
   return (
     <StaticQuery
       query={bioQuery}
@@ -46,7 +46,7 @@ function Bio() {
       }}
     />
   );
-}
+};
 
 const bioQuery = graphql`
   query BioQuery {
