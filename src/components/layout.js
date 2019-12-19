@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
+import Toggle from "../components/toggle";
 
 import { rhythm, scale } from "../utils/typography";
 
@@ -62,6 +63,7 @@ const Layout = ({ location, title, children }) => {
         }}
       >
         <header>{header}</header>
+        <Toggle />
         <main>{children}</main>
       </div>
       <Footer>
@@ -75,6 +77,9 @@ const Layout = ({ location, title, children }) => {
 
 const Wrapper = styled.div`
   min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--textNormal);
+  transition: color 0.2s ease-out, background 0.2s ease-out;
 `;
 
 const Footer = styled.footer`
