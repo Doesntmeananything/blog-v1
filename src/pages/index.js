@@ -11,7 +11,6 @@ const IndexPage = ({ location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Home" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
-      <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
       <h1>
         Hey, people{" "}
         <span role="img" aria-label="wave emoji">
