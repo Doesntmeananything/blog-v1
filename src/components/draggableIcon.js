@@ -24,7 +24,7 @@ const DraggableIcon = ({ children }) => {
         scale: down ? 1.2 : 1,
         immediate: down,
       });
-      if (dist(xy, previous) > 2 || !down)
+      if (dist(xy, previous) > 1 || !down)
         setAngle({ angle: Math.atan2(direction[0], -direction[1]) });
     },
     { bounds: { left: -200, right: 200, top: -100, bottom: 100 } }
