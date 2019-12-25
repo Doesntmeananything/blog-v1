@@ -37,6 +37,7 @@ const DraggableIcon = ({ children }) => {
         display: "inline-block",
         cursor: "-webkit-grab",
         userSelect: "none",
+        padding: "1rem",
         transform: to([angle], a => `rotate(${a}rad)`),
         ...props,
       }}
