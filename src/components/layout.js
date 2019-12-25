@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 import Toggle from "../components/toggle";
 
-import { rhythm, scale } from "../utils/typography";
+import { rhythm } from "../utils/typography";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
@@ -12,24 +12,26 @@ const Layout = ({ location, title, children }) => {
 
   if (location.pathname === rootPath || location.pathname === blogPath) {
     header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
-        <Link
+      <>
+        <h1
           style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
+            marginBottom: rhythm(1.5),
+            marginTop: 0,
           }}
-          to={location.pathname === blogPath ? `/blog/` : `/`}
         >
-          {title}
-        </Link>
-      </h1>
+          <Link
+            style={{
+              boxShadow: `none`,
+              textDecoration: `none`,
+              color: `inherit`,
+            }}
+            to={location.pathname === blogPath ? `/blog/` : `/`}
+          >
+            {title}
+          </Link>
+        </h1>
+        <Toggle />
+      </>
     );
   } else {
     header = (
@@ -62,8 +64,15 @@ const Layout = ({ location, title, children }) => {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <header>{header}</header>
-        <Toggle />
+        <header
+          style={{
+            display: "flex",
+            alignItems: "baseline",
+            justifyContent: "space-between",
+          }}
+        >
+          {header}
+        </header>
         <main>{children}</main>
       </div>
       <Footer>
