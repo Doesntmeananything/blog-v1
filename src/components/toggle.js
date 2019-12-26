@@ -8,7 +8,9 @@ const Toggle = () => (
     {({ _, toggleTheme }) => (
       <ReactToggle
         onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
-        checked={window.__theme === "dark"}
+        checked={
+          (typeof window !== "undefined" ? window.__theme : null) === "dark"
+        }
         aria-label="Switch between Dark and Light mode"
         icons={{
           checked: "🌙",
