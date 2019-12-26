@@ -18,7 +18,7 @@ const iconsRight = [GiBookmarklet, GiOwl, GiMoebiusTriangle];
 const interp = i => r =>
   `translate3d(0, ${15 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`;
 
-export default function AnimatedHero() {
+const AnimatedHero = () => {
   const { radians } = useSpring({
     to: useCallback(async next => {
       while (true) {
@@ -46,9 +46,11 @@ export default function AnimatedHero() {
           </animated.div>
         ))}
       </IconWrapper>
-      <h1 style={{ textAlign: "center", margin: "auto" }}>
-        Welcome to my Thoughts, Ideas & Work.
-      </h1>
+      <h2 style={{ textAlign: "center", margin: "auto" }}>
+        Welcome to my
+        <br />
+        Thoughts, Ideas & Work.
+      </h2>
       <IconWrapper>
         {iconsRight.map((Icon, index) => (
           <animated.div
@@ -63,7 +65,7 @@ export default function AnimatedHero() {
       </IconWrapper>
     </HeroContainer>
   );
-}
+};
 
 const HeroContainer = styled.div`
   display: flex;
@@ -73,3 +75,5 @@ const IconWrapper = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+export default AnimatedHero;
