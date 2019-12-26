@@ -36,6 +36,18 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
+        <h3>
+          <Link
+            to="/"
+            style={{
+              boxShadow: `none`,
+              textDecoration: `none`,
+              color: `inherit`,
+            }}
+          >
+            {siteTitle}
+          </Link>
+        </h3>
         <Bio />
 
         <ul
