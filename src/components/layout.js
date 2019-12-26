@@ -75,11 +75,7 @@ const Layout = ({ location, title, children }) => {
         </header>
         <main>{children}</main>
       </div>
-      <Footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </Footer>
+      <Footer>© {new Date().getFullYear()}</Footer>
     </Wrapper>
   );
 };
