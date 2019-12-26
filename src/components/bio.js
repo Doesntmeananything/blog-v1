@@ -27,18 +27,19 @@ const Bio = () => {
                 marginRight: rhythm(1 / 2),
                 marginBottom: 0,
                 minWidth: 50,
-                borderRadius: `100%`,
-              }}
-              imgStyle={{
-                borderRadius: `50%`,
+                borderRadius: "50%",
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in Saint
-              Petersburg building useful things.
+              Personal blog by <strong>{author}</strong> who lives and works in
+              Saint Petersburg creating useful things.
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+              <a
+                href={`https://twitter.com/${social.twitter}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                You should say 'hi' to him on Twitter
               </a>
             </p>
           </Container>
@@ -53,7 +54,7 @@ const bioQuery = graphql`
     avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
       childImageSharp {
         fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
