@@ -13,9 +13,33 @@ const IndexPage = ({ location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Home" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
       <AnimatedHero />
-      <Link to="/blog/">
-        <Button marginTop="35px">Go to Blog</Button>
-      </Link>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-evenly",
+          marginTop: "35px",
+        }}
+      >
+        <Link to="/blog/" style={{ boxShadow: "none" }}>
+          <Button>Go to Blog</Button>
+        </Link>
+        <a
+          href="https://twitter.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ boxShadow: "none" }}
+        >
+          <Button>Go to Twitter</Button>
+        </a>
+        <a
+          href="https://github.com/Doesntmeananything"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ boxShadow: "none" }}
+        >
+          <Button>Go to GitHub</Button>
+        </a>
+      </div>
     </Layout>
   );
 };
