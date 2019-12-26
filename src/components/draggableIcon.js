@@ -4,6 +4,8 @@ import { useSpring, animated, config, to } from "react-spring";
 import { dist } from "vec-la";
 import { useDrag } from "react-use-gesture";
 
+import { rhythm } from "../utils/typography";
+
 const DraggableIcon = ({ children }) => {
   const [props, set] = useSpring(() => ({
     x: 0,
@@ -35,14 +37,14 @@ const DraggableIcon = ({ children }) => {
       {...bind()}
       style={{
         display: "inline-block",
-        cursor: "-webkit-grab",
+        cursor: "grab",
         userSelect: "none",
-        padding: "1rem",
+        padding: "1rem 1rem 1rem 0",
         transform: to([angle], a => `rotate(${a}rad)`),
         ...props,
       }}
     >
-      <IconContext.Provider value={{ size: "4rem" }}>
+      <IconContext.Provider value={{ size: rhythm(2) }}>
         {children}
       </IconContext.Provider>
     </animated.div>
