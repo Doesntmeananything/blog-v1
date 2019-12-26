@@ -17,6 +17,7 @@ const Layout = ({ location, title, children }) => {
           style={{
             marginBottom: rhythm(1.5),
             marginTop: 0,
+            fontSize: rhythm(1),
           }}
         >
           <Link
@@ -35,23 +36,26 @@ const Layout = ({ location, title, children }) => {
     );
   } else {
     header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
-        <Link
+      <>
+        <h3
           style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
+            fontFamily: `Montserrat, sans-serif`,
+            marginTop: 0,
           }}
-          to={`/blog/`}
         >
-          {title}
-        </Link>
-      </h3>
+          <Link
+            style={{
+              boxShadow: `none`,
+              textDecoration: `none`,
+              color: `inherit`,
+            }}
+            to={`/blog/`}
+          >
+            {title}
+          </Link>
+        </h3>
+        <Toggle />
+      </>
     );
   }
   return (
@@ -67,7 +71,7 @@ const Layout = ({ location, title, children }) => {
         <header
           style={{
             display: "flex",
-            alignItems: "baseline",
+            alignItems: "end",
             justifyContent: "space-between",
           }}
         >
@@ -85,6 +89,7 @@ const Wrapper = styled.div`
   background-color: var(--bg);
   color: var(--textNormal);
   transition: color 0.2s ease-out, background 0.2s ease-out;
+  overflow: hidden auto;
 `;
 
 const Footer = styled.footer`
