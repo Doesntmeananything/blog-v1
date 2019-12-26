@@ -8,11 +8,11 @@ import {
   GiAbstract089,
 } from "react-icons/gi";
 import { useSpring, animated } from "react-spring";
+import styled from "styled-components";
 
 import DraggableIcon from "./draggableIcon";
 
 const iconsLeft = [GiBrain, GiOuroboros, GiAbstract089];
-
 const iconsRight = [GiBookmarklet, GiOwl, GiMoebiusTriangle];
 
 const interp = i => r =>
@@ -33,8 +33,8 @@ export default function AnimatedHero() {
   });
 
   return (
-    <div style={{ display: "flex" }}>
-      <div style={{ display: "flex", flexDirection: "column" }}>
+    <HeroContainer>
+      <IconWrapper>
         {iconsLeft.map((Icon, index) => (
           <animated.div
             key={Icon}
@@ -45,11 +45,11 @@ export default function AnimatedHero() {
             </DraggableIcon>
           </animated.div>
         ))}
-      </div>
+      </IconWrapper>
       <h1 style={{ textAlign: "center", margin: "auto" }}>
         Welcome to my Thoughts, Ideas & Work.
       </h1>
-      <div style={{ display: "flex", flexDirection: "column" }}>
+      <IconWrapper>
         {iconsRight.map((Icon, index) => (
           <animated.div
             key={Icon}
@@ -60,7 +60,16 @@ export default function AnimatedHero() {
             </DraggableIcon>
           </animated.div>
         ))}
-      </div>
-    </div>
+      </IconWrapper>
+    </HeroContainer>
   );
 }
+
+const HeroContainer = styled.div`
+  display: flex;
+`;
+
+const IconWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
