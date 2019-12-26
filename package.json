@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-personal-starter-blog",
+  "name": "my-blog",
   "private": true,
-  "description": "A personal blog starter for a blog powered by Netlify CMS, based on the default blog starter",
+  "description": "Personal website powered by Gatsby and Netlify CMS",
   "version": "1.0.0",
   "author": "Andrey Krasnov <andrey.krasnov.pm@gmail.com>",
   "bugs": {
