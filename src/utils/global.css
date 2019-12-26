@@ -21,6 +21,7 @@ body.dark {
 .react-toggle-track .react-toggle-track-x {
   height: 2px;
   left: 27px;
+  color: #ffffff;
 }
 
 .react-toggle-track .react-toggle-track-check {
