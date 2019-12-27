@@ -40,7 +40,7 @@ const IndexPage = ({ location }) => {
 const ButtonRow = styled.div`
   display: flex;
   justify-content: space-evenly;
-  margin-top: 55px;
+  margin-top: 70px;
 `;
 
 const StyledLink = styled.a`
