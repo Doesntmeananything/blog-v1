@@ -68,15 +68,7 @@ const Layout = ({ location, title, children }) => {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <header
-          style={{
-            display: "flex",
-            alignItems: "end",
-            justifyContent: "space-between",
-          }}
-        >
-          {header}
-        </header>
+        <Header>{header}</Header>
         <main>{children}</main>
       </div>
       <Footer>© {new Date().getFullYear()}</Footer>
@@ -90,6 +82,12 @@ const Wrapper = styled.div`
   color: var(--textNormal);
   transition: color 0.2s ease-out, background 0.2s ease-out;
   overflow: hidden auto;
+`;
+
+const Header = styled.header`
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
 `;
 
 const Footer = styled.footer`
