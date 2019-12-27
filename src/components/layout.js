@@ -60,21 +60,25 @@ const Layout = ({ location, title, children }) => {
   }
   return (
     <Wrapper>
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
+      <LayoutWrapper>
         <Header>{header}</Header>
         <main>{children}</main>
-      </div>
-      <Footer>© {new Date().getFullYear()}</Footer>
+        <Footer>© {new Date().getFullYear()}</Footer>
+      </LayoutWrapper>
     </Wrapper>
   );
 };
+
+const LayoutWrapper = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: ${rhythm(24)};
+  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+`;
 
 const Wrapper = styled.div`
   min-height: 100vh;
