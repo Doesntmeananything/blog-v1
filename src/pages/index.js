@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
+import styled from "styled-components";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import AnimatedHero from "../components/animatedHero";
 import Button from "../components/button";
-import styled from "styled-components";
 
 const IndexPage = ({ location }) => {
   const siteTitle = "Doesn't mean anything";
@@ -40,7 +40,7 @@ const IndexPage = ({ location }) => {
 const ButtonRow = styled.div`
   display: flex;
   justify-content: space-evenly;
-  margin-top: 35px;
+  margin-top: 55px;
 `;
 
 const StyledLink = styled.a`
