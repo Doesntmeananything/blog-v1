@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 import styled from "styled-components";
 
 import Layout from "../components/layout";
@@ -7,8 +7,10 @@ import SEO from "../components/seo";
 import AnimatedHero from "../components/animatedHero";
 import Button from "../components/button";
 
-const IndexPage = ({ location }) => {
+const IndexPage = ({ data, location }) => {
   const siteTitle = "Doesn't mean anything";
+
+  const { github, twitter } = data.site.siteMetadata.social;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -19,14 +21,14 @@ const IndexPage = ({ location }) => {
           <Button>Blog</Button>
         </Link>
         <StyledLink
-          href="https://twitter.com/"
+          href={`https://twitter.com/${twitter}`}
           target="_blank"
           rel="noopener noreferrer"
         >
           <Button>Twitter</Button>
         </StyledLink>
         <StyledLink
-          href="https://github.com/Doesntmeananything"
+          href={`https://github.com/${github}`}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -45,6 +47,19 @@ const ButtonRow = styled.div`
 
 const StyledLink = styled.a`
   box-shadow: none;
+`;
+
+export const indexQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        social {
+          twitter
+          github
+        }
+      }
+    }
+  }
 `;
 
 export default IndexPage;
