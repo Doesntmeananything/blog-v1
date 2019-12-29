@@ -6,7 +6,8 @@ module.exports = {
     description: `Personal website powered by Gatsby and Netlify CMS`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `TODO`,
+      twitter: `andrey_krasnoff`,
+      github: `doesntmeananything`,
     },
   },
   plugins: [
