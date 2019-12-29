@@ -63,7 +63,7 @@ const Layout = ({ location, title, children }) => {
       <LayoutWrapper>
         <Header>{header}</Header>
         <main>{children}</main>
-        <Footer>© {new Date().getFullYear()}</Footer>
+        <Footer>© {new Date().getFullYear()}, Andrey Krasnov</Footer>
       </LayoutWrapper>
     </Wrapper>
   );
