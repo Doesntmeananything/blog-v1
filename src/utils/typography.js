@@ -19,6 +19,7 @@ Wordpress2016.overrideThemeStyles = () => {
     },
     blockquote: {
       color: "var(--textNormal)",
+      borderColor: "var(--textNormal)",
     },
   };
 };
