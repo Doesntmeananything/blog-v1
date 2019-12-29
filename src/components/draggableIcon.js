@@ -29,7 +29,10 @@ const DraggableIcon = ({ children }) => {
       if (dist(xy, previous) > 1 || !down)
         setAngle({ angle: Math.atan2(direction[0], -direction[1]) });
     },
-    { bounds: { left: -200, right: 200, top: -100, bottom: 100 } }
+    {
+      bounds: { left: -200, right: 200, top: -100, bottom: 100 },
+      rubberband: true,
+    }
   );
 
   return (
@@ -40,6 +43,7 @@ const DraggableIcon = ({ children }) => {
         cursor: "grab",
         userSelect: "none",
         padding: "1rem 1rem 1rem 0",
+        touchAction: "none",
         transform: to([angle], a => `rotate(${a}rad)`),
         ...props,
       }}
