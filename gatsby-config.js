@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Doesn't mean anything`,
+    title: `Doesn't Mean Anything`,
     author: `Andrey Krasnov`,
-    description: `Personal website powered by Gatsby and Netlify CMS`,
+    description: `Personal website by Andrey Krasnov`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `andrey_krasnoff`,
@@ -79,8 +79,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Doesn't Mean Anything Blog`,
+        short_name: `DMA Blog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

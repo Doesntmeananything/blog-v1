@@ -8,7 +8,7 @@ import AnimatedHero from "../components/animatedHero";
 import Button from "../components/button";
 
 const IndexPage = ({ data, location }) => {
-  const siteTitle = "Doesn't mean anything";
+  const siteTitle = "Doesn't Mean Anything";
 
   const { github, twitter } = data.site.siteMetadata.social;
 
