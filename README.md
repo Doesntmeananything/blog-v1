@@ -1,11 +1,4 @@
-<p align="center">
-  <a href="https://www.doesntmeananything.com">
-    <img alt="My Blog" src="http://www.doesntmeananything.com/icons/icon-144x144.png" width="60"/>
-  </a>
-</p>
-<h1 align="center">
-  doesntmeananything.com
-</h1>
+# [doesntmeananything.com](www.doesntmeananything.com)
 
 ## My personal website and blog powered by Gatsby and Netlify CMS.
 
