@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Andrey Krasnov <andrey.krasnov.pm@gmail.com>",
   "bugs": {
-    "url": "https://github.com/Doesntmeananything/my-blog/issues"
+    "url": "https://doesntmeananything.com"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.5.1",
@@ -50,7 +50,7 @@
   "devDependencies": {
     "prettier": "^1.17.0"
   },
-  "homepage": "https://github.com/Doesntmeananything/my-blog",
+  "homepage": "https://doesntmeananything.com",
   "keywords": [
     "blog"
   ],

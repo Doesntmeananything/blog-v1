@@ -4,7 +4,7 @@ module.exports = {
     title: `Doesn't Mean Anything`,
     author: `Andrey Krasnov`,
     description: `Personal website by Andrey Krasnov`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://doesntmeananything.com`,
     social: {
       twitter: `andrey_krasnoff`,
       github: `doesntmeananything`,

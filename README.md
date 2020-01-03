@@ -1,6 +1,6 @@
-# [doesntmeananything.com](www.doesntmeananything.com)
+# [doesntmeananything.com](https://doesntmeananything.com)
 
-## My personal website and blog powered by Gatsby and Netlify CMS.
+## My personal website and blog powered by Gatsby and Netlify CMS
 
 ## 🚀 Quick start
 
