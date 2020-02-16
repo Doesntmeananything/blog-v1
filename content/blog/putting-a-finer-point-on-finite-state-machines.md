@@ -145,7 +145,7 @@ In other words, neither a regular expression nor a finite state machine can be c
 
 If you look carefully, you’ll notice that this type of pattern where every ‘a’ has a matching ‘b’, looks very similar to HTML. Within any pair of tags, you may have any number of other matching pairs of tags.
 
-So, while you may be able to use a regular expression or finite state machine to recognize if a page of HTML has the`<ht`ml`>,`<h`ead>`; and <body> elements in the correct order, you can’t use a regular expression to tell if an entire HTML page is valid or not — because HTML is not a regular pattern.
+So, while you may be able to use a regular expression or finite state machine to recognize if a page of HTML has the `<html>` , `<head>`,  and `<body>` elements in the correct order, you can’t use a regular expression to tell if an entire HTML page is valid or not — because HTML is not a regular pattern.
 
 ### Turing Machines
 
