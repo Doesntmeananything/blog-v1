@@ -1,4 +1,4 @@
-# [doesntmeananything.com](https://doesntmeananything.com)
+# My blog v1
 
 ## My personal website and blog powered by Gatsby and Netlify CMS
 
